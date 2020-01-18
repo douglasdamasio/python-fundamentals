@@ -1,0 +1,25 @@
+# Instalação do pip
+sudo apt install python3-pip
+
+# Instalação do pep8
+/usr/bin/python3 -m pip install -U pep8 --user
+
+# Instalção da virtualenv na maquina
+sudo apt install virtualenv
+
+# Instalação da virtualenv no pip
+pip install virtualenv
+
+# Volte na raiz e instancie o virtualenv
+cd ..
+virtualenv -p python3 venv
+
+# Ativar virtualenv
+. venv/bin/activate
+
+# Instalação de bibliotecas, no caso pandas
+pip install pandas
+
+# Gerando requirements.txt
+pip freeze >> requirements.txt
+

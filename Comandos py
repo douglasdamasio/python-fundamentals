@@ -1,8 +1,0 @@
-O comando abaixo trata-se de uma sheebang para a execução do arquivo no linux
-#! /usr/bin/python3
-
-Toda vez que encontra a letra p é dividido
-string.split('p')
-
-
-
