@@ -23,3 +23,6 @@ pip install pandas
 # Gerando requirements.txt
 pip freeze >> requirements.txt
 
+#Sai da venv
+deactivate
+
