@@ -1,4 +1,4 @@
-frase = 'A soma dos resultados'
+
 
 lista = ['Corinthians', [1, 2, 3, 4, 5], 'Palmeiras', 'São Paulo', [10, 11, 12, 13, 14], 'Flamengo', 'Vasco']
 
