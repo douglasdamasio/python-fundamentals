@@ -13,7 +13,7 @@ lista.index('comida')
 # Adicionar elementos ao final da lista
 lista.append('item')
 
-# Adicionar elementos em qualquer ponto da lista (Pirmeiro elemento é a posição)
+# Adicionar elementos em qualquer ponto da lista (Pirmeiro argumento é a posição)
 lista.insert(0, 'Posição')
 
 # Remover itens pelo nome
