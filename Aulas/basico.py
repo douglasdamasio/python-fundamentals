@@ -1,5 +1,5 @@
 #! /usr/bin/python3
-# O comando acima trata-se de uma sheebang para a execução do arquivo no linux
+# O comando acima trata-se de uma sheebang para a execução do arquivo no linux (necessario permissao de execução do arquivo)
 
 palavras = 'Palavras ao vento, são só palavras'
 lista = ['jovem', 'valor', 'aula', 'comida', 'horario']
