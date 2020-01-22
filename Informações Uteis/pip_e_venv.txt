@@ -8,9 +8,9 @@ sudo apt install python3-pip
 sudo apt install virtualenv
 
 # Instalação da virtualenv no pip
-pip install virtualenv
+pip3 install virtualenv
 
-# Volte na raiz e instancie o virtualenv
+# Volte na raiz do projeto e instancie o virtualenv
 cd ..
 virtualenv -p python3 venv
 
