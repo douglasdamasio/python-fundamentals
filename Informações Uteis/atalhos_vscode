@@ -1,0 +1,40 @@
+-- Atalhos do vscode --
+
+# 01 - Acesso via terminal
+code
+
+# 02 - Command Pallet
+Crtl + Shift + P
+
+# 03 - Lista de Arquivos
+Ctrl + P
+
+# 04 - Métodos e Atributos do arquivo (variavel)
+Ctrl + P -> @
+
+# 05 - Seleção multipla
+Ctrl + Shift + L
+
+# 06 - Intelisense
+Ctrl + Space
+
+# 07 - Git
+Ctrl + Shift + G
+
+# 08 - Dividir a tela
+Ctrl + \
+
+# 09 - Mover código
+Alt + Seta
+
+# 10 - Clonar trecho de código
+Shift + Alt + Seta
+
+# 11 - Terminal
+Ctrl + Shift + ´
+
+# 12 - Debbuger
+Ctrl + Shift + D
+
+# 13 - Submeter commit após mensagem
+Ctrl + Enter
