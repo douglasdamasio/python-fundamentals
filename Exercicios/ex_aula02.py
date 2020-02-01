@@ -56,3 +56,12 @@ print('Solução alternativa para Nomes e Municipios')
 for sigla in dados['estados']:
         print(f"Nome: {dados['estados'][sigla]['nome']}, Municipios: {dados['estados'][sigla]['municipios']}")
 print('-' * 30)
+
+### Exercicio IF
+usuario = input('Digite o nome do usuário: ').lower()
+user = ['rafael', 'camila', 'paulo', 'pamela']
+
+if usuario in user:
+    print('Acesso permitido')
+else:
+        print('Acesso negado') 
