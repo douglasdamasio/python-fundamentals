@@ -1,2 +1,6 @@
+# Apresentação link interno
+URI = http://520.salas4linux.com.br/
 
-http://520.salas4linux.com.br/
+# Extensão pra vscode
+-> Project Manager
+
