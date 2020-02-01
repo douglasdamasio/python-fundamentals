@@ -58,4 +58,4 @@ Total de descontos: R$ {total_desc:.2f}
 Salario Liquido: R$ R$ {salario_liquido:.2f}
 ''')
 
-#Fim
+# Fim
