@@ -19,7 +19,7 @@ lista.insert(0, 'Posição')
 # Remover itens pelo nome
 lista.remove('item')
 
-# Remove itens pela posição
+# Remove itens pela index, no caso posição 0
 lista.pop(0)
 
 # Imprime a lista organizada
