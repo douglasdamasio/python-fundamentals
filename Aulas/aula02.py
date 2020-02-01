@@ -1,74 +1,88 @@
-# Tuplas são imutaveis e chatas
 
-# Iniciando variavel tupla
-valores = (1, 2, 3)
+# # Aula sobre tuplas, dicionarios e condições if
 
-# Tuplas guardam vários itens
-valores = (1, 2, [1, 2, 3], {'chave': 'valor'})
+# ########### TUPLAS ###########
 
-# Metodo index mostra a posição do intem que é passado
-print(valores.index(2))
+# # Tuplas são imutaveis e chatas
 
-# Metodo count conta valores dentro de tuplas, dicionarios ou listas
-print(valores.count(1))
+# # Iniciando variavel tupla
+# valores = (1, 2, 3)
 
-##############################################################################################
+# # Tuplas guardam vários itens
+# valores = (1, 2, [1, 2, 3], {'chave': 'valor'})
 
-# Dicionários são chaves {}
-ling = {'joao': 'java', 'daniel': 'python', 'hector': 'PHP'}
+# # Metodo index mostra a posição do intem que é passado
+# print(valores.index(2))
 
-# Imprime valor na tela da chave
-print(ling['daniel'])
+# # Metodo count conta valores dentro de tuplas, dicionarios ou listas
+# print(valores.count(1))
 
-# Novo dicionario
-time_favorito = {'joao': 'corinthians', 'rafael': 'flamengo', 'ana': 'palmeiras'}
+# ########### DICIONARIOS ###########
 
-# Adicionar chave e valor no dicionario
-time_favorito['marcelo'] = 'vasco'
+# # Dicionários são chaves {}
+# ling = {'joao': 'java', 'daniel': 'python', 'hector': 'PHP'}
 
-# Alterar valores dentro do dicionario alterando a posição da pilha
-time_favorito.update({'marcelo': 'botafogo'})
+# # Imprime valor na tela da chave
+# print(ling['daniel'])
 
-# Imprime valores das chaves
-print(time_favorito.values())
+# # Novo dicionario
+# time_favorito = {'joao': 'corinthians', 'rafael': 'flamengo', 'ana': 'palmeiras'}
 
-# Imprimindo chaves
-print(time_favorito.keys())
+# # Adicionar chave e valor no dicionario
+# time_favorito['marcelo'] = 'vasco'
 
-# Primeira chave receber o valor da chave passada
-time_favorito['joao'] = time_favorito['rafael']
+# # Alterar valores dentro do dicionario alterando a posição da pilha
+# time_favorito.update({'marcelo': 'botafogo'})
 
-# Novo dicionario (complexo) _mongodb
-dados_cliente = {'clientes':{'cl001': {'nome': 'Rafael Silva',
-                                     'idade': 25,
-                                     'telefone': '1164824198'
-                                     },
-                            'cl002': {'nome': 'Carla Pereira',
-                                     'idade': 28,
-                                     'telefone': ''
-                                     }
-                            }
-                }
+# # Imprime valores das chaves
+# print(time_favorito.values())
 
-# Imprimindo todos os dados dentro da chave especificada
-print(dados_cliente['clientes'])
+# # Imprimindo chaves
+# print(time_favorito.keys())
 
-# Imprimindo dados de um segundo dicionario dentro de outro dicionario
-print(dados_cliente['clientes']['cl002'])
+# # Primeira chave receber o valor da chave passada
+# time_favorito['joao'] = time_favorito['rafael']
 
-# Imprimindo dados de um terceiro dicionario, ou seja, uma terceira chave
-print(dados_cliente['clientes']['cl002']['nome'])
+# # Novo dicionario (complexo) _mongodb
+# dados_cliente = {'clientes':{'cl001': {'nome': 'Rafael Silva',
+#                                      'idade': 25,
+#                                      'telefone': '1164824198'
+#                                      },
+#                             'cl002': {'nome': 'Carla Pereira',
+#                                      'idade': 28,
+#                                      'telefone': ''
+#                                      }
+#                             }
+#                 }
 
-# Adicionando um valor a chave sem mudar o local na pilha
-dados_cliente['clientes']['cl002']['telefone'] = '1164822247'
-print(dados_cliente['clientes']['cl002']['telefone'])
+# # Imprimindo todos os dados dentro da chave especificada
+# print(dados_cliente['clientes'])
 
-# Iniciar uma váriavel para buscar no dicionario
-var = input('Entre com o código do cliente: ')
+# # Imprimindo dados de um segundo dicionario dentro de outro dicionario
+# print(dados_cliente['clientes']['cl002'])
 
-# ifzinho de brinqk
-if int(var) > 2:
-    print('Cliente não cadastrado!')
+# # Imprimindo dados de um terceiro dicionario, ou seja, uma terceira chave
+# print(dados_cliente['clientes']['cl002']['nome'])
+
+# # Adicionando um valor a chave sem mudar o local na pilha
+# dados_cliente['clientes']['cl002']['telefone'] = '1164822247'
+# print(dados_cliente['clientes']['cl002']['telefone'])
+
+# # Iniciar uma váriavel para buscar no dicionario
+# var = input('Entre com o código do cliente: ')
+
+# # ifzinho de brinqk
+# if int(var) > 2:
+#     print('Cliente não cadastrado!')
+# else:
+# # Impressão com variavel
+#     print(dados_cliente['clientes']['cl00' + var])
+
+########### IF ###########
+
+idade = int(input('Digite sua idade: '))
+habilitacao = int(input('Possui habilitação:\nSIM digite 1 \nNÃO digite 2 \n> '))
+if idade >= 18 and habilitacao == 1:
+    print('Você pode dirigir!')
 else:
-# Impressão com variavel
-    print(dados_cliente['clientes']['cl00' + var])
+    print('Você não pode dirigir!')
