@@ -76,3 +76,4 @@ with open('arquivo.txt', 'a') as file:
 # Serve para criar o arquivo, caso ele não exista
 with open('arquivo.txt', 'x') as file:
         file.write('ARQUIVO')
+
