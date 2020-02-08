@@ -1,0 +1,21 @@
+# Comandos de Jupyter
+
+# Instalação
+pip install Jupyter
+
+# OBSERVAÇÃO: ATENTE-SE AO DIRETORIO NA INICIALIZAÇÃO!
+
+# Comando para iniciar o Jupyter
+jupyter notebook --allow-root
+
+# É possivel utilizar comandos linux dentro do jupyter, inserindo ! antes, exemplo:
+!pwd
+
+!ls
+
+!cd
+
+
+
+
+
