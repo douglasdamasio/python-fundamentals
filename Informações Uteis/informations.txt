@@ -12,3 +12,6 @@ https://www.amazon.com.br/Python-Fluente-Programa%C3%A7%C3%A3o-Concisa-Eficaz/dp
 
 # Estudo MongoDB
 https://university.mongodb.com/ 
+
+# Cientista de Dados
+Paulo Vasconselos
