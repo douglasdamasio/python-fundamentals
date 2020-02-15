@@ -1,0 +1,23 @@
+
+# [bash] Instalação
+sudo apt install mysql-server
+
+# [bash] Inicializar serviço
+systemctl start mysql
+
+# [bash] Acessando o mysql
+mysql -u root -p
+
+____ Nunca esquecer o ';' no final da linha ____
+
+# [mysql] Exibir os bancos de dados
+SHOW DATABASES;
+
+# [mysql] Criar um banco
+CREATE DATABASE projetos;
+
+# [mysql] Entrando no banco
+USE projetos;
+
+# Concedendo maiores previlegios no banco de dados projetos e tudo que está abaixo dele para o usuário admin, sendo o local localhost, identificado por '4linux' com maiores opções
+GRANT ALL PRIVILEGES ON projetos.* to admin@'localhost' IDENTIFIED BY '4linux' WITH GRANT OPTION;
