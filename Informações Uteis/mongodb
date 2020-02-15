@@ -1,0 +1,39 @@
+mongodb
+
+# [bash] Instalando MongoDB
+apt install mongodb
+
+# [bash] Iniciando o MongoDB
+systemclt start mongodb
+
+# [bash] Entrar no banco
+mongo
+
+# [mongodb] Mostrar bancos 
+show dbs
+show databases
+
+# [mongodb] Criar e acessar banco de dados
+use dexterops
+
+# [mongodb] Mosntrando coleções
+show collections
+show tables
+
+# [mongodb] Inserção
+db.fila.insert({"_id":1, "servico":"intranet", "status":0})
+
+# [mongodb] Seleção (select)
+db.fila.find()
+
+# [mongodb] Seleção com especificação
+db.fila.find({"_id":1}))
+
+# [mongodb] Delete
+db.fila.remove({"_id":1})
+
+# [mongodb] Seleção apresentavel
+db.fila.find().pretty()
+
+# [mongodb] Sair do mongodb
+ctrl + c ou exit
