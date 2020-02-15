@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+import requests
 
 class Carro():
 
@@ -14,9 +15,6 @@ class Carro():
         self.motor = False
 
 
-palio = Carro()
-# palio.ligar()
-
 class Servidor():
 
     def __init__(self, servico, disco, processador, memoria):
@@ -25,24 +23,33 @@ class Servidor():
         self.processador = processador
         self.memoria = memoria
 
-    def add_memoria(self):
-        self.memoria += 16
-        print('Adicionado 16GB de memória')
+    def add_memoria(self, addM):
+        self.memoria += addM
+        print(f'Adicionado {addM} GB de memória')
     
-    def add_disco(self):
-        self.disco +=250
-        print('Adicionado 250GB de espaço em disco')
+    def add_disco(self, addD):
+        self.disco += addD
+        print(f'Adicionado {addD} GB de espaço em disco')
 
-    def muda_serv(self):
-        self.servico = input('Digite o nome do novo serviço: ')
+    def muda_serv(self, new_serv):
+        self.servico = new_serv
+        print(f'Adicionado novo serviço {new_serv}')
 
+
+class Tests():
     
+    def __init__(self):
+        self.SITE = 'https://renatobarbosa.tech'
 
-servidorweb = Servidor('Nginx', 250, 'i7 9º Geração', 16)
-print(servidorweb.servico, servidorweb.disco, servidorweb.processador, servidorweb.memoria)
-servidorweb.muda_serv()
-servidorweb.add_disco()
-servidorweb.add_memoria()
-print(servidorweb.servico, servidorweb.disco, servidorweb.processador, servidorweb.memoria)
+    def verificar_site(self):
+        self.requisicao = requests.get(self.SITE)
+        return self.requisicao
 
 
+class servidor_web(Servidor):
+    def __init__(self, servico, disco, processador, memoria):
+        super().__init__(servico, disco, processador, memoria)
+        self.servico = 'nginx'
+
+vader = servidor_web('mariadb', 250, 'i9', 32)
+print(vader.servico, vader.disco)
