@@ -1,0 +1,53 @@
+# Introdução ao postgres
+
+# Instalação
+apt-get install postgresql
+
+# Mudando usuário para root
+sudo su -
+
+# Mudando do root para o usuário do postgres
+su - postgres
+
+# Starta o sistema
+systemctl start postgresql
+
+# Abre o postgres
+psql
+
+____ Nunca esquecer o ';' no final da linha ____
+
+# Dentro do postgres crie um usuário
+CREATE USER admin PASSWORD '4linux';
+
+# Criar database
+CREATE DATABASE projeto OWNER admin;
+
+# Comando para sair do postgres
+\q
+
+# Abrir com outro usuário (host, usuário, banco)
+psql -h localhost -U admin projeto
+
+# Criar uma tabela
+CREATE TABLE scripts(id SERIAL, nome VARCHAR(50), conteudo TEXT);
+
+# Detalhes das tabelas
+\dt
+
+# Detalhe tabela especifica (q, para sair)
+\d scripts
+
+# Inserindo conteudo 
+INSERT INTO scripts(nome, conteudo) VALUES ('hello_world.py', 'print("script de teste")');
+
+# Atualização de informações
+UPDATE scripts SET nome='update.py' WHERE id = 1;
+
+# Apagar todas as informações da tabela
+TRUNCATE scripts
+
+# Lista de comandos select
+SELECT * FROM scripts;
+SELECT * FROM scripts WHERE id BETWEEN 1 AND 3;
+SELECT * FROM scripts WHERE nome LIKE '%py';
