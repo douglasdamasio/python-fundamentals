@@ -19,5 +19,29 @@ CREATE DATABASE projetos;
 # [mysql] Entrando no banco
 USE projetos;
 
-# Concedendo maiores previlegios no banco de dados projetos e tudo que está abaixo dele para o usuário admin, sendo o local localhost, identificado por '4linux' com maiores opções
+# [mysql] Concedendo maiores previlegios no banco de dados projetos e tudo que está abaixo dele para o usuário admin, sendo o local localhost, identificado por '4linux' com maiores opções
 GRANT ALL PRIVILEGES ON projetos.* to admin@'localhost' IDENTIFIED BY '4linux' WITH GRANT OPTION;
+
+# [mysql] Atualizando os privilegios
+flush privileges;
+
+# [mysql] Sair
+exit;
+
+# [bash] Entrar com usuário diferente
+mysql -u admin -p
+
+# [mysql] Acessar o banco
+USE projetos;
+
+# [mysql] Criar tabela
+CREATE TABLE clientes(id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT, nome VARCHAR(255), endereco VARCHAR(255));
+
+# [mysql] Descrição da tabela
+DESCRIBE clientes;
+
+# [mysql] Inserir dados na tabela clientes
+INSERT INTO clientes(nome, endereco) VALUES ('Mariana', 'R. Vergueiro');
+
+# [mysql] Selecionar
+SELECT * FROM clientes;
