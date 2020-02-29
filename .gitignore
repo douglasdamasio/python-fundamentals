@@ -2,3 +2,4 @@ venv/
 .vscode
 novo_arquivo.csv
 .ipynb_checkpoints
+orm/__pycache__
