@@ -23,4 +23,28 @@ def inserir_dados():
         print(f'Erro! {e}')
 
 # Call
-inserir_dados()
+# inserir_dados()
+
+def buscar_dados():
+        for r in db.fila.find():
+                print(f'Empresa: {r["empresa"]}')
+                for c in r["cursos"]:
+                        print(20 * '=')
+                        print(f'Nome: {c["nome"]}\nCarga Horaria {c["carga horaria"]}')
+
+# buscar_dados()
+
+def add_sub():
+        db.fila.update({"_id":1}, {"$addToSet": {"instrutores": {"nome": "Mariana", "email": "mariana@4linux.com.br"}}})
+
+# add_sub()
+
+def update_instutor():
+        db.fila.update({"_id":1, "instrutores.nome": "Mariana"}, {"$set": {"instrutores.$.nome": "Marcia"}})
+
+# update_instutor()
+
+def update_instutor_email():
+        db.fila.update({"_id":1, "instrutores.nome": "Marcia"}, {"$set": {"instrutores.$.email": "marcia@4linux.com.br"}})
+
+# update_instutor_email()
